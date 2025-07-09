@@ -9,6 +9,7 @@
 node_modules/
 adapters/vscode/dist/
 adapters/vscode/.vscode-test/
+adapters/vscode/**/out/
 
 # --- Rust ---
 target/
@@ -16,3 +17,4 @@ Cargo.lock
 
 # --- VS Code temp files ---
 *.vsix
+

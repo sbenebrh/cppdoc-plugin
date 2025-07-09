@@ -1,6 +1,15 @@
 [package]
 name = "cppdoc_core"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+build = "build.rs"
+
+[lib]
+crate-type = ["cdylib"]
 
 [dependencies]
+napi         = { version = "2.16", default-features = false, features = ["napi8"] }
+napi-derive  = "2.16"
+
+[build-dependencies]
+napi-build   = "2.2"
