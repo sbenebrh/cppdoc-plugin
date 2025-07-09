@@ -1,0 +1,18 @@
+# --- General ---
+.DS_Store
+*.log
+
+# --- Python ---
+.venv/
+
+# --- Node / VS Code adapter ---
+node_modules/
+adapters/vscode/dist/
+adapters/vscode/.vscode-test/
+
+# --- Rust ---
+target/
+Cargo.lock
+
+# --- VS Code temp files ---
+*.vsix
