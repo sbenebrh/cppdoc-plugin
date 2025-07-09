@@ -15,4 +15,5 @@ jobs:
       with: { toolchain: stable, profile: minimal, override: true }
 
     - name: Build cppdoc_core
+      working-directory: core/cppdoc_core 
       run: cargo build --release -p cppdoc_core
