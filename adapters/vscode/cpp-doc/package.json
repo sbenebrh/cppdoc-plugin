@@ -6,14 +6,18 @@
   "engines": { "vscode": "^1.101.0" },
 
   "activationEvents": [
-    "onCommand:cpp-doc.ping"
+    "onCommand:cpp-doc.ping",
+    "onCommand:cpp-doc.lookupVector",
+    "onCommand:cpp-doc.openVector"
   ],
 
   "main": "./out/extension.js",
 
   "contributes": {
     "commands": [
-      { "command": "cpp-doc.ping", "title": "Cpp-Doc: Ping" }
+      { "command": "cpp-doc.ping", "title": "Cpp-Doc: Ping" },
+      { "command": "cpp-doc.lookupVector", "title": "Cpp-Doc: Lookup std::vector"},
+      { "command": "cpp-doc.openVector",   "title": "Cpp-Doc: Open std::vector" }
     ]
   },
 
